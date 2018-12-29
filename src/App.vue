@@ -68,9 +68,7 @@
         this.wrongKey = false;
         try {
           this.decryptedMessage = crypto.decrypt(this.encryptedMessage, this.creatKey());
-          console.log('success');
         } catch (err) {
-          console.log('error');
           this.decryptedMessage = '';
           this.wrongKey = true;
         }
@@ -143,15 +141,3 @@
     font-size: 18px;
   }
 </style>
-
-
-// console.log(crypto.encrypt(
-// `E,
-
-// The remainder of your $50,000 dollar debt, totaling $15,000, is due in 3 days. Full payment is due or delivery of the goods will be suspended and your down payment will be not be returned. We realize there have been personal circumstances which may interfere with your ability to fulfill the payment. We would like to remind you that excuses are not tolerated in this business. Deal with the issue at hand.
-
-// A copy of your original agreement can be found attached to the bottom of the bassinet in the closet. 
-
-// Regards,
-
-// E`, 'KAECLHG'));
